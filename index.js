@@ -1,19 +1,34 @@
 'use strict';
 
-hexo.extend.console.register('cgd', 'clean and generate and deploy', async function (args) {
+hexo.extend.console.register('cgd', 'clean and generate and deploy.', async function (args) {
   await hexo.call('clean', args);
   await hexo.call('generate', args);
   await hexo.call('deploy', args);
 });
 
-hexo.extend.console.register('cgs', 'clean and generate and server', async function (args) {
+hexo.extend.console.register('cgs', 'clean and generate and server.', async function (args) {
   await hexo.call('clean', args);
   await hexo.call('generate', args);
   await hexo.call('server', args);
 });
+hexo.extend.console.register('gd', 'generate and deploy.', async function (args) {
+  await hexo.call('generate', args);
+  await hexo.call('deploy', args);
+});
 
-hexo.extend.console.register('cgds', 'clean and generate and deploy and server', async function (args) {
+hexo.extend.console.register('gs', 'generate and server.', async function (args) {
+  await hexo.call('generate', args);
+  await hexo.call('server', args);
+});
+
+hexo.extend.console.register('cgds', 'clean and generate and deploy and server.', async function (args) {
   await hexo.call('clean', args);
+  await hexo.call('generate', args);
+  await hexo.call('deploy', args);
+  await hexo.call('server', args);
+});
+
+hexo.extend.console.register('gds', 'generate and deploy and server.', async function (args) {
   await hexo.call('generate', args);
   await hexo.call('deploy', args);
   await hexo.call('server', args);
