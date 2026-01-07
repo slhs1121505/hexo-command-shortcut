@@ -10,11 +10,12 @@ npm install hexo-command-shortcut --save
 
 ## Commands
 ```bash
-hexo cgd
+hexo cg d
 ```
 ```bash
-hexo cgs
+hexo cg s
 ```
 ```bash
-hexo cgds
+hexo cg ds
 ```
+
