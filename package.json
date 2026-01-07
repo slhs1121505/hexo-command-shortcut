@@ -1,0 +1,14 @@
+{
+  "name": "hexo-command-shortcut",
+  "version": "1.0.0",
+  "description": "Simple shortcut commands for Hexo: cgd, cgs, cgds",
+  "main": "index.js",
+  "keywords": [
+    "hexo",
+    "hexo-plugin",
+    "hexo-command",
+    "shortcut"
+  ],
+  "author": "slhs1121505",
+  "license": "MIT"
+}
